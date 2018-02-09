@@ -1,14 +1,14 @@
 Source: ubuntu-themes
 Section: gnome
 Priority: optional
-Maintainer: Ubuntu Artwork Team <ubuntu-art@lists.ubuntu.com>
+Maintainer: Adam Boardman <adamboardman@gmail.com>
 Build-Depends: debhelper (>= 9),
                gir1.2-rsvg-2.0,
                icon-naming-utils,
                python,
                python3-gi-cairo,
                python3-scour (>= 0.36)
-Standards-Version: 4.1.2
+Standards-Version: 3.9.8
 Homepage: https://launchpad.net/ubuntu-themes
 # If you aren't a member of ~ubuntu-art-pkg but need to upload
 # packaging changes, just go ahead. ~ubuntu-art-pkg will notice
