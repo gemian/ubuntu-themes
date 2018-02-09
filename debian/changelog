@@ -1,4 +1,4 @@
-ubuntu-themes (16.10+18.04-1) stretch; urgency=medium
+ubuntu-themes (16.10+18.04~1) stretch; urgency=medium
 
   * Imported to Gemian from UBPorts and updated with latest from launchpad
 
