@@ -1,8 +1,216 @@
-ubuntu-themes (16.11+ubports) xenial; urgency=medium
+ubuntu-themes (16.10+18.04.20180122.1-0ubuntu1) bionic; urgency=medium
 
-  * Imported to UBports
+  [ Carlo Lobrano ]
+  * Ambiance, Radiance: Fixed focus ring for combo boxes
+  * Ambiance, Radiance: Fixed link button mouseover
+  * Ambiance, Radiance: fix checkbutton and radiobutton highlight
+  * Ambiance, Radiance: Fixed grey background appears in step fields
 
- -- UBports auto importer <infra@ubports.com>  Sun, 07 Jan 2018 23:13:42 +0100
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 22 Jan 2018 12:01:31 +0000
+
+ubuntu-themes (16.10+18.04.20171224.1-0ubuntu1) bionic; urgency=medium
+
+  * Update Build-Depends:
+    - python-rsvg  -> gir1.2-rsvg-2.0
+    - python-scour -> python3-scour (>= 0.36)
+    - Add python3-gi-cairo (for scour's cmpsvg feature)
+  * Bump debhelper compat to 10
+  * Bump Standards-Version to 4.1.2
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Sun, 24 Dec 2017 00:20:15 +0000
+
+ubuntu-themes (16.10+18.04.20171115.1-0ubuntu1) bionic; urgency=medium
+
+  [ Matthieu James ]
+  * Last update of the Suru icon theme before I leave the company. Not
+    sure it's very useful anymore but at least the source files will be
+    archived. Too many changes to be listed here but everything is
+    commented commit by commmit.
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Wed, 15 Nov 2017 20:41:43 +0000
+
+ubuntu-themes (16.10+18.04.20171114-0ubuntu1) bionic; urgency=medium
+
+  [ Andrea Azzarone ]
+  * Fix osd progress bar look. (LP: #1724808)
+
+  [ Carlo Lobrano ]
+  * Ambiance, Radiance: fix horizontal linked suggested-action and
+    destructive-action (LP: #1721102)
+  * Ambiance, Radiance: Fixed border in switcher widget (LP: #1719355)
+
+  [ Marco Trevisan (Treviño) ]
+  * Ambiance, Radiance (gtk2): remove undefined "murrine-scrollbar" from
+    mate panel (LP: #1723422)
+  * Ambiance, Radiance: add theming for headerbar .destructive-action
+    button's (LP: #1726318)
+  * Ambiance, Radiance: Use inverted gradient for button actions in
+    maximized titlebars (LP: #1726322)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Tue, 14 Nov 2017 17:50:15 +0000
+
+ubuntu-themes (16.10+17.10.20171012.1-0ubuntu1) artful; urgency=medium
+
+  * Ambiance, Radiance: use toolbar-mode gradients on titlebars for
+    maximized windows (LP: #1717023, #1721440)
+  * Ambiance,Radiance: notebook active tab uses wrong gradient when in
+    backdrop
+  * Ambiance, Radiance: fix gradients for suggested-action hover, active
+    and backdrop states
+  * gtk2: Ambiance, Radiance: inherit style fixes from MATE themes (LP:
+    #961679)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Thu, 12 Oct 2017 05:19:32 +0000
+
+ubuntu-themes (16.10+17.10.20171003-0ubuntu1) artful; urgency=medium
+
+  * Fix traditional decorations offset when window toggle beetween focus to
+    unfocus when maximized (LP: #1720980)
+  * Fix suggested actions hovering color on unfocused window.
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 04 Oct 2017 15:41:53 +0200
+
+ubuntu-themes (16.10+17.10.20170930-0ubuntu1) artful; urgency=medium
+
+  * Make suggested actions disable style like other buttons (no grey disabled)
+    button to not appear unthemed (LP: #1720570)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Sat, 30 Sep 2017 17:51:18 -0400
+
+ubuntu-themes (16.10+17.10.20170929-0ubuntu1) artful; urgency=medium
+
+  * Ambiance/Radiance/*/gtk-widget.css:
+    Make primary action button (suggested action) in headerbar more visible
+    (LP: #1709500)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 29 Sep 2017 09:57:25 -0400
+
+ubuntu-themes (16.10+17.10.20170925-0ubuntu1) artful; urgency=medium
+
+  [ Carlo Lobrano ]
+  * Fix misaligned Entry widget borders (LP: #1712996)
+
+  [ Marco Trevisan (Treviño) ]
+  * Ambiance,Radiance: fix vertical linked buttons borders, corners and
+    backgrounds (LP: #1718234)
+  * Ambiance, Radiance: be less restrictive in setting headerbar minimum
+    height (LP: #1712011)
+  * Ambiance,Radiance: refactor .titlebar theming to properly support
+    headerbar children (LP: #1716143)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 25 Sep 2017 15:58:56 +0000
+
+ubuntu-themes (16.10+17.10.20170918-0ubuntu1) artful; urgency=medium
+
+  [ Carlo Lobrano ]
+  * Added support for GtkTextView::monospace (LP: #1700218)
+  * Fixes support GtkTreeView separators (LP: #1701512)
+  * Made dimmed text more visible in Gnome Boxes with Ambiance (LP:
+    #1700100)
+  * Added support for vertically linked buttons (LP: #1708141)
+
+  [ Marco Trevisan (Treviño) ]
+  * Radiance: use proper button border-image-source for headerbar
+    elements (LP: #1692925)
+  * Ambiance, Radiance: ignore titlebutton theming for appmenu
+  * Ambiance, Radiance: add better definition for button destructive-
+    action (LP: #1697900)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 18 Sep 2017 18:25:27 +0000
+
+ubuntu-themes (16.10+17.10.20170817-0ubuntu1) artful; urgency=medium
+
+  * Rename most battery icons prepending unity-*. As the battery
+    icons in ubuntu-mono aren't square, we want to special case them
+    (LP: #1711085).
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 16 Aug 2017 15:35:22 +0200
+
+ubuntu-themes (16.10+17.10.20170703-0ubuntu1) artful; urgency=medium
+
+  [ Daniel van Vugt ]
+  * Fixed the ubuntu-mono-dark battery icons to avoid distortion in (LP:
+    #1693155)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 03 Jul 2017 12:11:11 +0000
+
+ubuntu-themes (16.10+17.10.20170619-0ubuntu1) artful; urgency=medium
+
+  [ Daniel van Vugt ]
+  * Vertically centre widgets in the header bar (LP: #1693613)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 19 Jun 2017 23:36:59 +0000
+
+ubuntu-themes (16.10+17.10.20170518-0ubuntu1) artful; urgency=medium
+
+  * Ambiance, Radiance: handle .titlebar separator as headerbar one
+  * Ambiance, Radiance: apply toolbar style to headerbars that are not
+    child or are not .titlebar's (LP: #1689239)
+  * Ambiance, Radiance: don't apply the toolbar style to headerbars or
+    titlebars
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Thu, 18 May 2017 16:22:36 +0000
+
+ubuntu-themes (16.10+17.10.20170516.1-0ubuntu1) artful; urgency=medium
+
+  * Ambiance, Radiance: define theme_* colors based on ours
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Tue, 16 May 2017 10:33:31 +0000
+
+ubuntu-themes (16.10+17.10.20170515.1-0ubuntu1) artful; urgency=medium
+
+  * Ambiance, Radiance: keep the windows button closer
+  * Ambiance, Radiance: set proper min-height for messagedialog
+    decorations
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Mon, 15 May 2017 12:06:29 +0000
+
+ubuntu-themes (16.10+17.10.20170510-0ubuntu1) artful; urgency=medium
+
+  * Ambiance, Radiance: fix shadows, handlers, decorations look for CSD
+    and SSD in GS (LP: #1685271, #1685272, #1689239)
+
+ -- Marco Trevisan (Treviño) <mail@3v1n0.net>  Wed, 10 May 2017 12:42:22 +0000
+
+ubuntu-themes (16.10+17.10.20170503-0ubuntu1) artful; urgency=medium
+
+  [ Alberts Muktupāvels ]
+  * Update gnome-panel.css for compatibility with GNOME Panel 3.24.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 03 May 2017 12:40:48 +0000
+
+ubuntu-themes (16.10+17.10.20170426-0ubuntu1) artful; urgency=medium
+
+  [ Alberts Muktupāvels ]
+  * Update gnome-panel.css for compatibility with GNOME Panel 3.24.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Wed, 26 Apr 2017 12:34:03 +0000
+
+ubuntu-themes (16.10+17.04.20170406-0ubuntu1) zesty; urgency=medium
+
+  * gnome-panel.css: Remove the shadow on the right side of the panel.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Thu, 06 Apr 2017 09:32:01 +0000
+
+ubuntu-themes (16.10+17.04.20170309-0ubuntu1) zesty; urgency=medium
+
+  * Revert previous change since it changes the Nautilus 3.24 app icon
+    in Unity to an arrow
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 09 Mar 2017 14:12:13 +0000
+
+ubuntu-themes (16.10+17.04.20170303-0ubuntu1) zesty; urgency=medium
+
+  * Add symlinks to handle Nautilus 3.24's new icon name (LP: #1669655)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 03 Mar 2017 03:51:08 +0000
+
+ubuntu-themes (16.10+17.04.20170126-0ubuntu1) zesty; urgency=medium
+
+  [ Iain Lane ]
+  * gnome-software uses ".dim-label"; we need to style this
+
+ -- iain@orangesquash.org.uk <iain@orangesquash.org.uk>  Thu, 26 Jan 2017 11:52:51 +0000
 
 ubuntu-themes (16.10+17.04.20161205-0ubuntu1) zesty; urgency=medium
 
