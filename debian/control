@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 9),
                icon-naming-utils,
                python,
                python3-gi-cairo,
-               python3-scour (>= 0.36)
+               python-scour,
 Standards-Version: 3.9.8
 Homepage: https://launchpad.net/ubuntu-themes
 # If you aren't a member of ~ubuntu-art-pkg but need to upload
