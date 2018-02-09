@@ -1,3 +1,9 @@
+ubuntu-themes (16.10+18.04-1) stretch; urgency=medium
+
+  * Imported to Gemian from UBPorts and updated with latest from launchpad
+
+ -- Adam Boardman <adamboardman@gmail.com>  Fri, 09 Feb 2018 14:56:42 +0100
+
 ubuntu-themes (16.10+18.04.20180122.1-0ubuntu1) bionic; urgency=medium
 
   [ Carlo Lobrano ]
